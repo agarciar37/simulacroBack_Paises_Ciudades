@@ -5,7 +5,7 @@ import { resolvers } from "./resolvers.ts";
 import { typeDefs } from "./schema.ts";
 import { ApolloServer } from "@apollo/server";
 
-const MONGO_URL = Deno.env.get("MONGO_URL")
+const MONGO_URL = "mongodb+srv://agarciar37:<db_password>@cluster0.nv27ans.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 if (!MONGO_URL) throw new Error("MONGO_URL is not defined");
 
